@@ -1,6 +1,4 @@
-# Geocord
-
-TODO: Write a gem description
+# Geocord [Ruby Gem - Latitude e Longitude de um endereço]
 
 ## Installation
 
@@ -18,17 +16,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+require 'geocord'
+address = Geocord.process('Rua Adolfo Gordo, Brasil')
+ => #<Geocord::Cordinate:0x007f961aab8120 @latitude=-5.8219534, @longitude=-35.233108>
+2.1.2 :006 > address.latitude
+ => -5.8219534
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/geocord/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-=======
-geocord
-=======
+...
 
-Gem para retorno da Longitude e Latitude
+## Teste Gem!
