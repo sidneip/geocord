@@ -16,10 +16,10 @@ Or install it yourself as:
 
 ## Usage
 
-require 'geocord'
-address = Geocord.process('Rua Adolfo Gordo, Brasil')
+$ require 'geocord'
+$ address = Geocord.process('Rua Adolfo Gordo, Brasil')
  => #<Geocord::Cordinate:0x007f961aab8120 @latitude=-5.8219534, @longitude=-35.233108>
-2.1.2 :006 > address.latitude
+$ address.latitude
  => -5.8219534
 
 ## Contributing
