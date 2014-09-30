@@ -1,29 +1,56 @@
-# Geocord [Ruby Gem - Latitude e Longitude de um endereço]
+GeoCord
+=========
 
-## Installation
+Gem para retornar a latitude e Longitude de acordo com o endereço.
+  
+  - Facil utilização.
+  - Versão de teste.
+  - Contribua.
 
-Add this line to your application's Gemfile:
+Futuras implementações:
 
-    gem 'geocord'
+- Retornar todas as geolocalizações encontradas em um array.
+- Retornar endereço de latitude e longitude
+- Evoluir testes.
+> Contribua...
 
-And then execute:
 
-    $ bundle
+Version
+----
 
-Or install it yourself as:
+0.1
 
-    $ gem install geocord
+Tech
+-----------
 
-## Usage
+GoogleAPI
 
-$ require 'geocord'
-$ address = Geocord.process('Rua Adolfo Gordo, Brasil')
- => #<Geocord::Cordinate:0x007f961aab8120 @latitude=-5.8219534, @longitude=-35.233108>
-$ address.latitude
- => -5.8219534
+Installation
+--------------
 
-## Contributing
+```sh
+gem 'geocord'
 
-...
+bundle
 
-## Teste Gem!
+Ou
+
+$ gem install geocord
+rails console
+require 'geocord'
+address = Geocord.process('Rua Adolfo Gordo, Brasil') 
+address.latitude => -5.8219534
+```
+
+License
+----
+
+MIT
+
+**Free Software, Hell Yeah!**
+
+
+Contributors
+--------------
+[Sidnei Pacheco](https://github.com/sidneip)
+
