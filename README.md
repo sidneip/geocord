@@ -42,6 +42,11 @@ address = Geocord.process('pituba')
  => [{:endereco=>"Pituba - Rio Grande do Norte, Brazil", :latitude=>-5.983333, :longitude=>-35.4166669}, {:endereco=>"Pituba - Bahia, Brazil", :latitude=>-11.6775581, :longitude=>-42.7225256}, {:endereco=>"Pituba - Rio Grande do Norte, Brazil", :latitude=>-6.4960844, :longitude=>-35.0051338}, {:endereco=>"Pituba, Salvador - State of Bahia, Brazil", :latitude=>-13.0025439, :longitude=>-38.4566915}]
 2.1.2 :012 > address.first[:endereco]
  => "Pituba - Rio Grande do Norte, Brazil"
+address.each do |geo|
+2.1.2 :005 >     puts 'bahia ' if geo[:endereco].include?('Bahia')
+2.1.2 :006?>   end
+bahia
+bahia
 ```
 
 License
