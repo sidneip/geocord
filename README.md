@@ -36,6 +36,11 @@ bundle
 Ou
 
 $ gem install geocord
+```
+
+Examples
+--------------
+```sh
 rails console
 require 'geocord'
 address = Geocord.process('pituba')
@@ -47,6 +52,9 @@ address.each do |geo|
 2.1.2 :006?>   end
 bahia
 bahia
+
+Geocord.getCep('40015-040')
+=> {:cep=>"40015040", :tipo=>nil, :logradouro=>"Frederico Castro Rebello", :bairro=>"Comércio", :cidade=>"Salvador", :estado=>"BA"}
 ```
 
 License

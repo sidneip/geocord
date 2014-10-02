@@ -5,6 +5,7 @@ require 'json'
 
 module Geocord
 	GOOGLEAPIS = 'http://maps.googleapis.com/maps/api/geocode/json?address='
+	CEPAPIS = 'http://correiosapi.apphb.com/cep/'
 	class Cordinate
   	attr_accessor :latitude, :longitude
 	end
@@ -25,4 +26,15 @@ module Geocord
 			return cordinate
 		end
 	end
+
+	def self.getCep(cep)
+		cep = cep.delete('.').delete('-')
+		uri = URI.encode("#{CEPAPIS}#{cep}")
+		uri = URI.parse(uri)
+		conn = Faraday.new(:url => uri)
+		response = conn.get
+		data = JSON.parse(response.body)
+	  return endereco = {:cep => data['cep'], :tipo => data['tipoLogradouro'], :logradouro => data['logradouro'], :bairro => data['bairro'], :cidade => data['cidade'], :estado => data['estado']}
+	end
+	
 end
