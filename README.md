@@ -2,6 +2,9 @@ GeoCord
 =========
 
 Gem para retornar a latitude e Longitude de acordo com o endereço.
+ Funcionalidades:
+ * Retorno de endereço de acordo com endereço.
+ * Retorno de endereço de acordo com CEP.
   
   - Facil utilização.
   - Versão de teste.
@@ -9,7 +12,6 @@ Gem para retornar a latitude e Longitude de acordo com o endereço.
 
 Futuras implementações:
 
-- Retornar todas as geolocalizações encontradas em um array.
 - Retornar endereço de latitude e longitude
 - Evoluir testes.
 > Contribua...
