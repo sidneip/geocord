@@ -8,6 +8,7 @@ module Geocord
 	CEPAPIS = 'http://correiosapi.apphb.com/cep/'
 	class Cordinate
   	attr_accessor :latitude, :longitude
+  	alias :getCep, :get_cep
 	end
 
 	def self.process(address)
@@ -27,7 +28,7 @@ module Geocord
 		end
 	end
 
-	def self.getCep(cep)
+	def self.get_cep(cep)
 		cep = cep.delete('.').delete('-')
 		uri = URI.encode("#{CEPAPIS}#{cep}")
 		uri = URI.parse(uri)
